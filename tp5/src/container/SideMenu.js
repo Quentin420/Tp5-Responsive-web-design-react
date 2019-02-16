@@ -3,7 +3,9 @@ import React from 'react';
 export default class SideMenu extends React.Component {
   render() {
     return (
-      <aside>
+      <div class=" container">
+      <div class="row">
+      <aside class="col-lg-2 d-none d-lg-block">
         <h3>Browse</h3>
         <nav class="browse">
           <ul class="main">
@@ -45,6 +47,8 @@ export default class SideMenu extends React.Component {
           </ul>
         </nav>
       </aside>
+      </div>
+      </div>
     );
   }
 }

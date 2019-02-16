@@ -6,6 +6,8 @@ import twitterLogo from '../img/icon/twitter.png';
 export default class Artist extends Component {
   render() {
     return (
+      <div class="container">
+      <main class="col-lg-10 col-12">
       <header>
         <div class="name-photo">
           <aside>
@@ -24,21 +26,23 @@ export default class Artist extends Component {
             </p>
           </div>
         </div>
-        <div class="stats-links">
-          <section class="stats">
+        <div class="row justify-content-between stats-links">
+          <section class="row col-12 col-md-9 stats">
             <span>2 Playlists</span>
             <span>4 Reviews</span>
             <span>6 Followers</span>
             <span>13 Following</span>
           </section>
-          <div class="links">
+          <div class="row col-12 col-md-3 links">
             <div>
               <a href="#">Collection</a>
               <a href="#">History</a>
             </div>
           </div>
-        </div>
+          </div>
       </header>
+      </main>
+      </div>
     );
   }
 }
