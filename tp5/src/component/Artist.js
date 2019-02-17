@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import artist from '../img/artist.png';
 import fbLogo from '../img/icon/fb.png';
 import twitterLogo from '../img/icon/twitter.png';
+import {Container, Row, Col} from 'reactstrap';
 
 export default class Artist extends Component {
   render() {
     return (
-      <div class="container">
-      <main class="col-lg-10 col-12">
+      
       <header>
         <div class="name-photo">
           <aside>
@@ -26,23 +26,28 @@ export default class Artist extends Component {
             </p>
           </div>
         </div>
-        <div class="row justify-content-between stats-links">
-          <section class="row col-12 col-md-9 stats">
+        <div class="stats-links">
+        <Row>
+          <Col lg="10" md="9" sm="12">
+          <section class=" stats">
             <span>2 Playlists</span>
             <span>4 Reviews</span>
             <span>6 Followers</span>
             <span>13 Following</span>
           </section>
-          <div class="row col-12 col-md-3 links">
+          </Col>
+          <Col lg="2" md="3" sm="12">
+          <div class=" links">
             <div>
               <a href="#">Collection</a>
               <a href="#">History</a>
             </div>
           </div>
+          </Col>
+          </Row>
           </div>
       </header>
-      </main>
-      </div>
+     
     );
   }
 }

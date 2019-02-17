@@ -1,29 +1,41 @@
 import React, { Component } from 'react';
 import logo from '../img/logo.png';
+import {Container, Row, Col} from 'reactstrap';
 
 class Header extends Component {
   render() {
     return (
+      
       <header>
-        <div class="wrapper row">
-          <div class="container logo-search col-2">
+      
+        <div class="wrapper">
+        <Row>
+          <Col lg="2">
+          <div class=" logo-search ">
             <img class="pull-left" src={logo} alt="logo" />
           </div>
-
-          <form class="col-7 row d-none d-md-block justify-content-between" method="POST" action="index.html">
-            <input type="search" required class="col search" />
+          </Col>
+          <Col lg="7" className="d-none d-lg-block">
+          <form method="POST" action="index.html">
+            <input type="search" required class=" search" />
             <input
               type="submit"
               name="submit"
               value="Rechercher"
-              class="col submit"
+              class=" submit"
             />
           </form>
-          <div class="user col-3 dropdown">
-            <a href="#" class=" btn dropdown-toggle">Luke Chesser</a>
+          </Col>
+          <Col lg="3">
+          <div class="user ">
+            <a href="#" >Luke Chesser</a>
           </div>
+          </Col>
+          </Row>
         </div>
+      
       </header>
+      
     );
   }
 }
